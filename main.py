@@ -49,5 +49,10 @@ for links in anchor:
 navs = soup.find(id = "nav-content");
 for element in navs.parents:
     # print(element.name);
+    None;
 
 # print(navs.previous_siblings)
+
+# Working with CSS
+CSSElement = soup.find('.container');
+print(CSSElement);
