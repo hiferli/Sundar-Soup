@@ -43,5 +43,11 @@ for links in anchor:
             all_links.add(websiteURL + link);
         elif(link[0] == 'h'):
             all_links.add(link);
-            
-print(all_links)
+
+# print(all_links)
+
+navs = soup.find(id = "nav-content");
+for element in navs.parents:
+    # print(element.name);
+
+# print(navs.previous_siblings)
