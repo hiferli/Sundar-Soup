@@ -10,4 +10,6 @@ website_content = requests.get(websiteURL);
 webHTML = website_content.content
 # print(webHTML)
 
-
+# Parsing the HTML
+webParse = BeautifulSoup(webHTML , 'html.parser')
+print(webParse.prettify())
